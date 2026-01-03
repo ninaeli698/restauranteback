@@ -96,10 +96,10 @@ class ItemMenuAdmin(admin.ModelAdmin):
         if obj.badges:
             badge_icons = {
                 'recomendado': '⭐',
-                'vegano': '🌱',
-                'vegetariano': '🥕',
-                'sin-gluten': '🍞',
-                'picante': '🌶️',
+                'Desayunos': '',
+                'Almuerzos': '',
+                'Especiales': '',
+                'Escurcion': '',
             }
             icon = badge_icons.get(obj.badges, '🏷️')
             return format_html(

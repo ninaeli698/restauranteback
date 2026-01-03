@@ -1,0 +1,121 @@
+/* Estilos personalizados para QuickMenu Admin */
+
+/* Header personalizado */
+#header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+}
+
+#branding h1 {
+    color: white !important;
+    font-weight: 600 !important;
+}
+
+/* Sidebar mejorado */
+#nav-sidebar {
+    background: #f8f9fa !important;
+    border-right: 1px solid #dee2e6 !important;
+}
+
+#nav-sidebar .module {
+    background: white !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+    margin: 10px !important;
+    border: 1px solid #dee2e6 !important;
+}
+
+#nav-sidebar .module h2 {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%) !important;
+    color: white !important;
+    padding: 10px 15px !important;
+    border-radius: 8px 8px 0 0 !important;
+    margin: 0 !important;
+}
+
+/* Botones modernos */
+input[type="submit"], .button, .submit-row input {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    border: none !important;
+    border-radius: 6px !important;
+    padding: 10px 20px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s !important;
+}
+
+input[type="submit"]:hover, .button:hover, .submit-row input:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4) !important;
+}
+
+/* Tablas mejoradas */
+#changelist {
+    background: white !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05) !important;
+}
+
+#changelist table {
+    border-radius: 8px !important;
+    overflow: hidden !important;
+}
+
+#changelist table thead th {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+    font-weight: 600 !important;
+    border: none !important;
+}
+
+/* Formularios bonitos */
+.form-row {
+    background: white !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
+    margin-bottom: 20px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+    border: 1px solid #dee2e6 !important;
+}
+
+/* Alertas personalizadas */
+.messagelist .success {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+}
+
+.messagelist .warning {
+    background: linear-gradient(135deg, #ffc107 0%, #fd7e14 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    background: #f8f9fa !important;
+    border-radius: 8px !important;
+    padding: 10px 15px !important;
+    margin-bottom: 20px !important;
+}
+
+/* Estadísticas en el dashboard */
+.dashboard .module table {
+    background: white !important;
+    border-radius: 8px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+}
+
+/* Badges en listas */
+.badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-success { background: #28a745; color: white; }
+.badge-warning { background: #ffc107; color: white; }
+.badge-danger { background: #dc3545; color: white; }
+.badge-info { background: #17a2b8; color: white; }

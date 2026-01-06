@@ -130,6 +130,7 @@ if _env_cors:
     CORS_ALLOWED_ORIGINS = [h.strip() for h in _env_cors.split(',') if h.strip()]
 else:
     CORS_ALLOWED_ORIGINS = [
+        "https://restaurante-eli.vercel.app/",
         "http://localhost:5173",
         "http://localhost:3000",
     ]

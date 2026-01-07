@@ -5,6 +5,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import generics, status
 from .models import Categoria, ItemMenu
+from django.db import models
 from .serializers import MenuCompletoSerializer, CategoriaSerializer, ItemMenuSerializer
 
 @api_view(['GET'])

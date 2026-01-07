@@ -130,11 +130,22 @@ if _env_cors:
     CORS_ALLOWED_ORIGINS = [h.strip() for h in _env_cors.split(',') if h.strip()]
 else:
     CORS_ALLOWED_ORIGINS = [
-        "https://restaurante-eli.vercel.app/",
+        "https://restaurante-eli.vercel.app",
         "http://localhost:5173",
         "http://localhost:3000",
     ]
 CORS_ALLOW_CREDENTIALS = True
+
+# Permitir todos los orígenes temporalmente si la variable de entorno lo solicita
+# Uso recomendado: establecer CORS_ALLOW_ALL_ORIGINS=1 solo para debugging.
+if os.environ.get('CORS_ALLOW_ALL_ORIGINS', '').lower() in ('1', 'true', 'yes'):
+    CORS_ALLOW_ALL_ORIGINS = True
+
+# Expresiones regulares útiles para aceptar orígenes de plataformas como Vercel/Render
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https?://.*\.vercel\.app$",
+    r"^https?://.*\.onrender\.com$",
+]
 
 # REST Framework
 REST_FRAMEWORK = {
@@ -157,4 +168,4 @@ if 'RENDER' in os.environ:
     RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
     if RENDER_EXTERNAL_HOSTNAME:
         ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
-    ALLOWED_HOSTS.append('restaurante-eli.onrender.com')
+    ALLOWED_HOSTS.append('sabor-y-arte.onrender.com')
